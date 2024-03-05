@@ -1,0 +1,95 @@
+<header class="hero flex flex-wrap justify-center w-full h-screen">
+  <nav class="fixed flex flex-wrap w-full z-10" id="menu">
+    <a href="#" class="block text-black text-2xl w-2/4 p-5">
+      <i class="fa-solid fa-plane"></i>
+      Traveline
+    </a>
+    <div class="icon__menu flex justify-end items-center w-2/4 p-5">
+      <a href="#menu" class="open flex justify-end"><i class="fa-solid fa-bars"></i></a>
+      <a href="#" class="close"><i class="fa-solid fa-close"></i></a>
+    </div>
+    <ul class="links__menu flex justify-end gap-3 w-2/4 p-5">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resorts">Resorts</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="text-center self-center">
+    <h1 class="text-5xl">Traveline</h1>
+    <p class="text-2xl">Your relax experience</p>
+  </div>
+</header>
+
+<style>
+  .hero {
+    background: linear-gradient(
+        to bottom,
+        rgba(130, 240, 203, 0.6) 40%,
+        rgba(0, 0, 0, 0)
+      ),
+      url(assets/banner_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  nav {
+    background: rgba(130, 240, 203, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  .icon__menu a i {
+    font-size: 1.5em;
+  }
+
+  #menu:target .links__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    padding: 15px 30px;
+  }
+
+  .close {
+    display: none;
+  }
+
+  #menu:target .open {
+    display: none;
+  }
+
+  #menu:target .close {
+    display: flex;
+    justify-content: end;
+  }
+
+  @media (width <= 800px) {
+    .links__menu {
+      display: none;
+    }
+
+    header nav a {
+      width: 80%;
+    }
+
+    header nav div {
+      width: 20%;
+      text-align: end;
+    }
+  }
+
+  @media (width >= 800px) {
+    .icon__menu {
+      display: none;
+    }
+
+    .links__menu {
+      align-items: center;
+    }
+  }
+</style>

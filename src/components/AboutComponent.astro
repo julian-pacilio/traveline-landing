@@ -1,0 +1,88 @@
+<section id="about">
+  <article class="flex gap-8 px-5">
+    <figure class="self-end w-2/4">
+      <img src="assets/choose_us.png" alt="" />
+    </figure>
+    <div class="flex flex-wrap w-2/4 py-5">
+      <h3 class="text-2xl mt-5 pl-[14px] w-full self-start">We offer best services</h3>
+      <ul class="flex flex-col my-5 w-full justify-center gap-6 self-end">
+        <li class="flex items-center gap-4">
+          <i class="fa-solid fa-list-ul icon_benefits_list"></i>
+          <div>
+            <h4 class="text-lg">Personalized Itineraries</h4>
+            <p>Tailored travel plans to suit your preferences</p>
+          </div>
+        </li>
+        <li class="flex items-center gap-4">
+          <i class="fa-solid fa-headset icon_benefits_list"></i>
+          <div>
+            <h4 class="text-lg">Exceptional Service</h4>
+            <p>24/7 support to ensure your trip is smooth and stress-free</p>
+          </div>
+        </li>
+        <li class="flex items-center gap-4">
+          <i class="fa-solid fa-hotel icon_benefits_list"></i>
+          <div>
+            <h4 class="text-lg">Exclusive Partnerships</h4>
+            <p>Best airlines, accommodations, and experiences</p>
+          </div>
+        </li>
+        <li class="flex items-center gap-4">
+          <i class="fa-solid fa-medal icon_benefits_list"></i>
+          <div>
+                        <h4 class="text-lg" class="text-lg">First Quality</h4>
+            <p>Acknowledged among the top 20 global travel agencies</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+</section>
+
+<style>
+  .icon_benefits_list {
+    font-size: 3.5em;
+    color: rgb(130, 240, 203);
+    filter: drop-shadow(1px 2px .8px rgba(0, 0, 0, 0.490));
+    padding: 14px;
+    border-radius: 100%;
+  }
+
+  section article {
+    max-width: 70pc;
+    margin: auto;
+  }
+
+  section {
+    min-width: 100%;
+    /* background: linear-gradient(45deg, rgb(130, 240, 203), transparent); */
+    background: linear-gradient(45deg, rgba(130, 240, 203, 0.301), transparent);
+  }
+
+  @media (width <= 800px) {
+
+    article {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    figure {
+      align-self: center;
+      max-width: 500px;
+    }
+
+    article div {
+      width: 100%;
+    }
+
+    article div h3{
+      text-align: center;
+    }
+
+    article div ul li {
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+    }
+  }
+</style>

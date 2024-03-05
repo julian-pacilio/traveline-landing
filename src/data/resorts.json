@@ -1,0 +1,50 @@
+[
+    {
+        "score" : "9.8",
+        "image" : "resort_1.jpg",
+        "name"  : "Myracle Resort",
+        "review_score" : "4.8",
+        "location" : "Florida",
+        "price" : "430"
+    },
+    {
+        "score" : "9.6",
+        "image" : "resort_1.jpg",
+        "name"  : "Warvick Resort",
+        "review_score" : "4.6",
+        "location" : "Florida",
+        "price" : "480"
+    },
+    {
+        "score" : "9.0",
+        "image" : "resort_1.jpg",
+        "name"  : "Beachdown Resort",
+        "review_score" : "4.9",
+        "location" : "Florida",
+        "price" : "460"
+    },
+    {
+        "score" : "8.8",
+        "image" : "resort_1.jpg",
+        "name"  : "Hidden Resort",
+        "review_score" : "3.9",
+        "location" : "Florida",
+        "price" : "390"
+    },
+    {
+        "score" : "9.1",
+        "image" : "resort_1.jpg",
+        "name"  : "Green Resort",
+        "review_score" : "4.1",
+        "location" : "Florida",
+        "price" : "410"
+    },
+    {
+        "score" : "8.2",
+        "image" : "resort_1.jpg",
+        "name"  : "Wind Resort",
+        "review_score" : "4.5",
+        "location" : "Florida",
+        "price" : "380"
+    }
+]

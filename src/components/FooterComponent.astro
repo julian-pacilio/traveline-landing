@@ -1,0 +1,73 @@
+---
+import Contact from '../components/ContactComponent.astro';
+---
+
+<footer class="flex items-center flex-col w-full">
+  <div class="footer-line block w-full h-2"></div>
+  <div class="flex flex-col items-start px-5 w-full">
+    <div class="flex flex-col self-center py-4 px-0">
+      <Contact />
+    </div>
+    <div
+      class="footer-logo flex justify-center items-center gap-[10px] my-4 mx-0"
+    >
+      <div>
+        <i class="fa-solid fa-plane text-2xl"></i>
+      </div>
+      <p class="text-2xl">Traveline</p>
+    </div>
+    <div
+      class="footer-bottom flex items-center justify-between text-left w-full py-4 px-0 border-t border-solid border-gray-200"
+    >
+      <small class="text-base my-0 mx-1"
+        > Copyright © <span id="year"></span> Traveline. All rights reserved.</small
+      >
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+
+<!-- 
+  <footer class="flex items-center flex-col w-full">
+  <div class="footer-line block w-full h-2"></div>
+  <div class="flex flex-col items-start px-5 w-full">
+    <div class="flex flex-col self-center py-4 px-0">
+      <div class="text-center my-4 mx-0">
+        <h2 class="m-0">Sign up to our newsletter</h2>
+        <p class="my-3 mx-0">Stay up to date with our news and articles</p>
+      </div>
+      <div class="footer-subscribe flex flex-wrap gap-3 my-4 mx-0">
+        <input type="email" spellcheck="false" placeholder="Your Email" />
+        <button> Suscribe</button>
+      </div>
+    </div>
+    <div
+      class="footer-logo flex justify-center items-center gap-[10px] my-4 mx-0"
+    >
+      <div>
+        <i class="fa-solid fa-plane text-2xl"></i>
+      </div>
+      <p class="text-2xl">Traveline</p>
+    </div>
+    <div
+      class="footer-bottom flex items-center justify-between text-left w-full py-4 px-0 border-t border-solid border-gray-200"
+    >
+      <small class="text-base my-0 mx-1"
+        > Copyright © <span id="year"></span> Traveline. All rights reserved.</small
+      >
+    </div>
+  </div>
+</footer>
+ -->
+
+<style>
+  .footer-line {
+    background: linear-gradient(90deg, #82f0cb, 50%, #605dff);
+  }
+
+  .footer-logo p {
+    font-weight: bold;
+  }
+</style>
